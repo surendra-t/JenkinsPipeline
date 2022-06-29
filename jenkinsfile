@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Dev') {
+            steps {
+                echo 'Dev Deployed'
+            }
+        }
+        
+        stage('QA') {
+            steps {
+                echo 'Ready for QA'
+            }
+        }
+        
+        stage('Production') {
+            steps {
+                echo 'Ready to Deploy in Prod'
+            }
+        }
+        
+         stage('Realese') {
+            steps {
+                echo 'Ready to Realese'
+            }
+        }
+    }
+}
